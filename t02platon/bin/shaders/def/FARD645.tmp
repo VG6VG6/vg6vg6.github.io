@@ -1,0 +1,20 @@
+#version 300 es
+precision highp float;
+in vec3 InPosition;
+in vec3 InNormal;
+
+uniform float Time;
+uniform vec3 Mouse;
+uniform matr WVP;
+
+out vec2 DrawPos;
+out vec3 DrawNormal;
+
+void main( void )
+{
+  gl_Position = vec4(InPosition, 1) * WVP;
+  DrawNormal = InNormal;
+  //gl_Position.x += 0.1 * sin(Time);
+  //DrawPos = InPosition.xy + Mouse.xy / 400.0;
+}
+/* VG6 */
