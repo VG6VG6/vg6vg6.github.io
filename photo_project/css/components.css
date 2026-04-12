@@ -538,3 +538,79 @@
   .ph-footer__inner { flex-direction: column; }
   .ph-footer__names { text-align: left; }
 }
+
+
+/* ─── PDF VIEWER ─── */
+.ph-pdf-widget {
+  border: 1px solid var(--sepia-border);
+  background: #1a120a;
+  overflow: hidden;
+}
+
+.ph-pdf__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #120d06;
+  border-bottom: 1px solid #3a2a18;
+}
+
+.ph-pdf__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--sepia-border);
+  background: transparent;
+  color: var(--sepia-light);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ph-pdf__btn:hover:not(:disabled) {
+  background: var(--sepia-border);
+  color: var(--bar-bg);
+}
+.ph-pdf__btn:disabled { cursor: default; }
+
+.ph-pdf__counter {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: var(--sepia-light);
+  letter-spacing: 0.5px;
+}
+
+.ph-pdf__stage {
+  position: relative;
+  width: 100%;
+  background: #2a1e10;
+  line-height: 0; /* убирает зазор под canvas */
+}
+
+.ph-pdf__stage canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ph-pdf__loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: var(--sepia-light);
+  letter-spacing: 1px;
+  background: #2a1e10;
+}
+
+@media (max-width: 480px) {
+  .ph-pdf__btn { width: 36px; height: 36px; font-size: 14px; }
+  .ph-pdf__counter { font-size: 12px; }
+}
