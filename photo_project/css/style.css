@@ -1,0 +1,165 @@
+/* ═══════════════════════════════════════════════
+   style.css — базовые переменные, типографика,
+   сетка, адаптив
+   ═══════════════════════════════════════════════ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ─── ПЕРЕМЕННЫЕ ─── */
+:root {
+  --sepia-dark:   #2c1f0e;
+  --sepia-mid:    #6b4c2a;
+  --sepia-light:  #c8a97a;
+  --sepia-pale:   #f0e6d0;
+  --sepia-bg:     #f5f0e8;
+  --sepia-border: #b8956a;
+  --accent:       #8b1a1a;
+  --bar-bg:       #1a120a;
+
+  /* Отступы секций */
+  --section-pad-v: 96px;
+  --section-pad-h: 64px;
+  --section-max:   1280px;
+}
+
+/* ─── BASE ─── */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--sepia-bg);
+  color: var(--sepia-dark);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+/* ─── SECTION ─── */
+.ph-section {
+  padding: var(--section-pad-v) var(--section-pad-h);
+  border-bottom: 1px solid #d4c4aa;
+  max-width: var(--section-max);
+  margin: 0 auto;
+}
+
+.ph-section__head {
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+  margin-bottom: 56px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d4c4aa;
+}
+
+.ph-section__year {
+  font-family: 'Courier New', monospace;
+  font-size: clamp(36px, 4.5vw, 56px);
+  color: var(--sepia-light);
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.ph-section__title {
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--sepia-dark);
+  line-height: 1.2;
+}
+
+.ph-section__subtitle {
+  font-size: 13px;
+  color: var(--sepia-mid);
+  margin-top: 6px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+/* ─── GRIDS ─── */
+.ph-grid-2    { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.ph-grid-3    { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-bottom: 48px; }
+.ph-grid-wide { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; margin-bottom: 48px; }
+
+/* ─── TEXT ─── */
+.ph-text p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--sepia-dark);
+  margin-bottom: 20px;
+}
+.ph-text p:last-child { margin-bottom: 0; }
+
+/* ─── ORNAMENT ─── */
+.ph-ornament {
+  text-align: center;
+  color: var(--sepia-border);
+  font-size: 20px;
+  letter-spacing: 10px;
+  padding: 40px 0;
+}
+
+/* ─── LEGEND ─── */
+.ph-legend {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-top: 1px solid #d4c4aa;
+  margin-top: 48px;
+}
+.ph-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--sepia-mid);
+  font-family: 'Courier New', monospace;
+}
+.ph-legend__dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+
+/* ─── CAPTION ─── */
+.ph-caption {
+  font-size: 13px;
+  color: var(--sepia-mid);
+  margin-top: 10px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════════════
+   АДАПТИВ — мобильные устройства
+   ═══════════════════════════════════════════════ */
+
+/* Планшет */
+@media (max-width: 1024px) {
+  :root {
+    --section-pad-v: 72px;
+    --section-pad-h: 48px;
+  }
+  .ph-grid-wide { grid-template-columns: 3fr 2fr; }
+}
+
+/* Мобильный — основной брейкпоинт */
+@media (max-width: 768px) {
+  :root {
+    --section-pad-v: 56px;
+    --section-pad-h: 24px;
+  }
+
+  body { font-size: 17px; }
+
+  .ph-grid-2,
+  .ph-grid-3,
+  .ph-grid-wide { grid-template-columns: 1fr; gap: 32px; }
+
+  .ph-section__head { gap: 16px; flex-wrap: wrap; }
+
+  .ph-legend { gap: 16px; }
+}
+
+/* Маленький мобильный */
+@media (max-width: 480px) {
+  :root {
+    --section-pad-v: 40px;
+    --section-pad-h: 18px;
+  }
+  .ph-section__year { font-size: 32px; }
+}

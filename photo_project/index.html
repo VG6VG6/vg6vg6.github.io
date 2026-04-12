@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История фотографии в России</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+
+<!-- ══════════════════════════════════════
+     HERO — заголовочный экран
+     ЗАМЕНИ: kicker, заголовок, подзаголовок, диапазон дат
+══════════════════════════════════════ -->
+<div class="ph-hero">
+  <div class="ph-hero__kicker">Мультимедиапроект</div>
+  <h1 class="ph-hero__title">История фотографии в России</h1>
+  <p class="ph-hero__sub">От дагерротипа до цифровой эпохи — визуальная летопись страны сквозь объектив камеры</p>
+  <div class="ph-hero__badge">1839 — наши дни</div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     STICKY TIMELINE
+     ЗАМЕНИ: href, года, подписи.
+     Добавляй/убирай .ph-tl-item по числу периодов.
+     id у секций ниже должны совпадать с href здесь.
+══════════════════════════════════════ -->
+<nav class="ph-timeline" id="ph-timeline" aria-label="Хронология">
+  <div class="ph-timeline__inner">
+    <div class="ph-timeline__line"></div>
+
+    <a class="ph-tl-item" href="#s1839">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1839</div>
+      <div class="ph-tl-item__label">Дагерротип</div>
+    </a>
+    <a class="ph-tl-item" href="#s1860">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1860-е</div>
+      <div class="ph-tl-item__label">Первые ателье</div>
+    </a>
+    <a class="ph-tl-item" href="#s1890">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1890-е</div>
+      <div class="ph-tl-item__label">Репортаж</div>
+    </a>
+    <a class="ph-tl-item" href="#s1917">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1917</div>
+      <div class="ph-tl-item__label">Революция</div>
+    </a>
+    <a class="ph-tl-item" href="#s1930">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1930-е</div>
+      <div class="ph-tl-item__label">Авангард</div>
+    </a>
+    <a class="ph-tl-item" href="#s1941">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1941–45</div>
+      <div class="ph-tl-item__label">Война</div>
+    </a>
+    <a class="ph-tl-item" href="#s1960">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1960-е</div>
+      <div class="ph-tl-item__label">Оттепель</div>
+    </a>
+    <a class="ph-tl-item" href="#s1991">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">1991</div>
+      <div class="ph-tl-item__label">Новая эпоха</div>
+    </a>
+    <a class="ph-tl-item" href="#s2000">
+      <div class="ph-tl-item__dot"></div>
+      <div class="ph-tl-item__year">2000-е</div>
+      <div class="ph-tl-item__label">Цифра</div>
+    </a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 1: 1839 — Дагерротип
+     ЗАМЕНИ: id, год, тексты, фото, аудио, цифры
+══════════════════════════════════════ -->
+<section id="s1839" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1839</div>
+    <div>
+      <div class="ph-section__title">Появление дагерротипа в России</div>
+      <div class="ph-section__subtitle">Раздел I · Первые опыты</div>
+    </div>
+  </div>
+
+  <div class="ph-grid-wide">
+
+    <!-- Левый столбец: текст + цитаты -->
+    <div>
+      <div class="ph-text">
+        <!-- ЗАМЕНИ: основной текст -->
+        <p>Здесь идёт основной текст о появлении фотографии в России. Замените на свой материал. Опишите контекст эпохи, ключевых деятелей, первые опыты и реакцию общества.</p>
+        <p>Продолжение текстового блока. Рекомендуется структурировать абзацы: контекст → событие → последствие.</p>
+      </div>
+
+      <!-- ЗАМЕНИ: цитата из научной литературы -->
+      <div class="ph-quote-sci">
+        <p>«Здесь вставьте цитату из научной литературы или мнение историка. Выделяется рамкой слева.»</p>
+        <cite>— Фамилия И. О. Название книги, год, стр. 00</cite>
+      </div>
+
+      <!-- ЗАМЕНИ: цитата из первоисточника -->
+      <div class="ph-quote-wit">
+        <div class="ph-quote-wit__tag">Свидетельство очевидца</div>
+        <p>«Здесь вставьте цитату из первоисточника: дневника, письма, газетной заметки.»</p>
+        <cite>— Имя очевидца, дата, источник</cite>
+      </div>
+    </div>
+
+    <!-- Правый столбец: фото + аудио -->
+    <div>
+      <!-- ЗАМЕНИ: вставьте <img src="..."> вместо ph-photo -->
+      <div class="ph-photo">
+        <div class="ph-photo__icon"></div>
+        <div class="ph-photo__label">Фотография / Дагерротип</div>
+      </div>
+      <div class="ph-caption">Подпись. Автор, год, место хранения, архивный номер.</div>
+
+      <!-- ЗАМЕНИ: добавьте <audio controls src="..."> или ссылку на плеер -->
+      <div class="ph-audio">
+        <div class="ph-audio__btn"></div>
+        <div class="ph-audio__info">
+          <div class="ph-audio__title">Название аудиозаписи или документа</div>
+          <div class="ph-audio__meta">Тип источника · Год · Продолжительность</div>
+        </div>
+        <div class="ph-audio__wave">
+          <span style="height:8px"></span><span style="height:16px"></span>
+          <span style="height:12px"></span><span style="height:22px"></span>
+          <span style="height:10px"></span><span style="height:18px"></span>
+          <span style="height:14px"></span><span style="height:22px"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЗАМЕНИ: цифры статистики -->
+  <div class="ph-stats">
+    <div class="ph-stats__cell"><span class="ph-stats__num">1839</span><div class="ph-stats__label">Год появления в России</div></div>
+    <div class="ph-stats__cell"><span class="ph-stats__num">00</span><div class="ph-stats__label">Первые ателье в столицах</div></div>
+    <div class="ph-stats__cell"><span class="ph-stats__num">00</span><div class="ph-stats__label">Статистика / данные</div></div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 2: 1860-е — Ателье и портрет
+══════════════════════════════════════ -->
+<section id="s1860" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1860-е</div>
+    <div>
+      <div class="ph-section__title">Фотографические ателье и портрет</div>
+      <div class="ph-section__subtitle">Раздел II · Коммерческая фотография</div>
+    </div>
+  </div>
+
+  <!-- ЗАМЕНИ: три фото в ряд -->
+  <div class="ph-grid-3">
+    <div>
+      <div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Портрет</div></div>
+      <div class="ph-caption">Подпись. Автор. Год.</div>
+    </div>
+    <div>
+      <div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Портрет</div></div>
+      <div class="ph-caption">Подпись. Автор. Год.</div>
+    </div>
+    <div>
+      <div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Портрет</div></div>
+      <div class="ph-caption">Подпись. Автор. Год.</div>
+    </div>
+  </div>
+
+  <div class="ph-grid-2">
+    <div>
+      <div class="ph-text">
+        <p>Текст об этом периоде. Развитие коммерческой фотографии, первые ателье, визитные карточки.</p>
+      </div>
+      <div class="ph-quote-sci">
+        <p>«Цитата историка об этом периоде.»</p>
+        <cite>— Автор, источник, год</cite>
+      </div>
+    </div>
+    <div>
+      <!-- ЗАМЕНИ: карту (встроенный Tilda Map или <img>) -->
+      <div class="ph-map">
+        <div class="ph-map__grid"></div>
+        <div class="ph-map__label">Карта · Распространение ателье</div>
+      </div>
+      <div class="ph-caption">Замените на интерактивную карту или изображение.</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 3: 1890-е — Репортаж
+══════════════════════════════════════ -->
+<section id="s1890" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1890-е</div>
+    <div>
+      <div class="ph-section__title">Рождение репортажной фотографии</div>
+      <div class="ph-section__subtitle">Раздел III · Документальный жанр</div>
+    </div>
+  </div>
+
+  <div class="ph-grid-wide">
+    <div>
+      <div class="ph-text">
+        <p>Текст о репортажной фотографии конца XIX века. Первые фотожурналисты, фотографические общества, технические новшества.</p>
+      </div>
+
+      <!-- Вертикальный мини-таймлайн — ЗАМЕНИ даты и события -->
+      <div class="ph-infographic">
+        <div class="ph-infographic__line"></div>
+        <div class="ph-infographic__item">
+          <div class="ph-infographic__dot"></div>
+          <div class="ph-infographic__year">1880</div>
+          <div class="ph-infographic__text">Описание события или изобретения этого года.</div>
+        </div>
+        <div class="ph-infographic__item">
+          <div class="ph-infographic__dot"></div>
+          <div class="ph-infographic__year">1888</div>
+          <div class="ph-infographic__text">Описание события или изобретения этого года.</div>
+        </div>
+        <div class="ph-infographic__item">
+          <div class="ph-infographic__dot"></div>
+          <div class="ph-infographic__year">1895</div>
+          <div class="ph-infographic__text">Описание события или изобретения этого года.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="ph-photo ph-photo--portrait"><div class="ph-photo__icon"></div><div class="ph-photo__label">Репортажное фото</div></div>
+      <div class="ph-caption">Подпись. Автор. Год. Место.</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 4: 1917 — Революция (тёмный фон)
+══════════════════════════════════════ -->
+<section id="s1917" class="ph-band">
+  <div class="ph-band__head">
+    <div class="ph-band__year">1917</div>
+    <div>
+      <div class="ph-band__title">Революция и фотография</div>
+      <div class="ph-band__sub">Раздел IV · Фотография как документ истории</div>
+    </div>
+  </div>
+
+  <!-- ЗАМЕНИ: вставьте <iframe> или Tilda Video блоки -->
+  <div class="ph-grid-2" style="max-width:960px; margin:0 auto 40px;">
+    <div>
+      <div class="ph-video"><div class="ph-video__play"></div><div class="ph-video__label">Видеофрагмент / Хроника</div></div>
+      <div class="ph-caption" style="color:#7a6248;">Вставьте видео через Tilda Video. Подпись к источнику.</div>
+    </div>
+    <div>
+      <div class="ph-video"><div class="ph-video__play"></div><div class="ph-video__label">Документальный фрагмент</div></div>
+      <div class="ph-caption" style="color:#7a6248;">Документальный или игровой фрагмент эпохи.</div>
+    </div>
+  </div>
+
+  <div class="ph-text" style="max-width:760px; margin:0 auto 36px;">
+    <p style="color:var(--sepia-light);">Текст о роли фотографии в революционные годы. Государственный заказ, фотохроника событий, первые советские фотоагентства.</p>
+  </div>
+
+  <!-- ЗАМЕНИ: аудио -->
+  <div class="ph-audio" style="max-width:680px; margin:0 auto;">
+    <div class="ph-audio__btn"></div>
+    <div class="ph-audio__info">
+      <div class="ph-audio__title">Речь / Декламация / Звуковой документ</div>
+      <div class="ph-audio__meta">Аудиоисточник · Год · Формат записи</div>
+    </div>
+    <div class="ph-audio__wave">
+      <span style="height:6px"></span><span style="height:18px"></span>
+      <span style="height:10px"></span><span style="height:26px"></span>
+      <span style="height:8px"></span><span style="height:20px"></span>
+      <span style="height:14px"></span><span style="height:26px"></span>
+    </div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 5: 1930-е — Авангард
+══════════════════════════════════════ -->
+<section id="s1930" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1930-е</div>
+    <div>
+      <div class="ph-section__title">Советский авангард и конструктивизм</div>
+      <div class="ph-section__subtitle">Раздел V · Авангард, плакат, Родченко</div>
+    </div>
+  </div>
+
+  <div class="ph-grid-2">
+    <div>
+      <div class="ph-text">
+        <p>Текст о советской фотографии 1920–30-х годов. Авангардные эксперименты, диагональные ракурсы Родченко, фотомонтаж, пропаганда и искусство.</p>
+        <p>Ключевые имена, издания, объединения фотографов этого периода.</p>
+      </div>
+      <div class="ph-quote-wit">
+        <div class="ph-quote-wit__tag">Свидетельство очевидца</div>
+        <p>«Цитата из воспоминаний, дневника или письма фотографа или современника эпохи.»</p>
+        <cite>— Автор, год</cite>
+      </div>
+      <div class="ph-quote-sci">
+        <p>«Цитата из научной работы об авангардной фотографии.»</p>
+        <cite>— Автор, источник, год</cite>
+      </div>
+    </div>
+    <div>
+      <div class="ph-photo ph-photo--portrait"><div class="ph-photo__icon"></div><div class="ph-photo__label">Работа / Плакат / Живопись</div></div>
+      <div class="ph-caption">Название. Автор. Год. Техника. Место хранения.</div>
+    </div>
+  </div>
+
+  <div class="ph-legend">
+    <div class="ph-legend__item"><div class="ph-legend__dot" style="background:#8b7355;"></div>Государственные архивы</div>
+    <div class="ph-legend__item"><div class="ph-legend__dot" style="background:#8b1a1a;"></div>Частные коллекции</div>
+    <div class="ph-legend__item"><div class="ph-legend__dot" style="background:#3a6a4a;"></div>Музейные собрания</div>
+    <div class="ph-legend__item"><div class="ph-legend__dot" style="background:#2a4a6a;"></div>Иностранные архивы</div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 6: 1941–45 — Война
+══════════════════════════════════════ -->
+<section id="s1941" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1941–45</div>
+    <div>
+      <div class="ph-section__title">Фотографы на фронте</div>
+      <div class="ph-section__subtitle">Раздел VI · Военная фотожурналистика</div>
+    </div>
+  </div>
+
+  <div class="ph-text" style="max-width:760px; margin-bottom:48px;">
+    <p>Текст о военных фотографах. Евгений Халдей, «Знамя Победы над Рейхстагом» и другие знаковые кадры. Работа фотокорреспондентов ТАСС.</p>
+  </div>
+
+  <div class="ph-grid-3">
+    <div><div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Военное фото</div></div><div class="ph-caption">Подпись. Автор. Год.</div></div>
+    <div><div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Военное фото</div></div><div class="ph-caption">Подпись. Автор. Год.</div></div>
+    <div><div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Военное фото</div></div><div class="ph-caption">Подпись. Автор. Год.</div></div>
+  </div>
+
+  <div class="ph-quote-wit" style="max-width:700px;">
+    <div class="ph-quote-wit__tag">Свидетельство очевидца</div>
+    <p>«Цитата военного фотографа или фронтового корреспондента.»</p>
+    <cite>— Имя, год, источник</cite>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 7: 1960-е — Оттепель
+══════════════════════════════════════ -->
+<section id="s1960" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1960-е</div>
+    <div>
+      <div class="ph-section__title">Оттепель и гуманистическая фотография</div>
+      <div class="ph-section__subtitle">Раздел VII · Оттепель</div>
+    </div>
+  </div>
+
+  <div class="ph-grid-wide">
+    <div>
+      <div class="ph-text">
+        <p>Текст об оттепели в советской фотографии. Журнал «Советское фото», гуманистический взгляд на человека, влияние западной фотографии.</p>
+        <p>Ключевые фотографы, издания и выставки этого периода.</p>
+      </div>
+      <div class="ph-quote-sci">
+        <p>«Цитата исследователя об оттепельной фотографии.»</p>
+        <cite>— Автор, источник, год</cite>
+      </div>
+    </div>
+    <div>
+      <div class="ph-photo"><div class="ph-photo__icon"></div><div class="ph-photo__label">Фото оттепели</div></div>
+      <div class="ph-caption">Подпись. Автор. Год.</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 8: 1991 — Новая эпоха
+══════════════════════════════════════ -->
+<section id="s1991" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">1991</div>
+    <div>
+      <div class="ph-section__title">Распад СССР и новая фотография</div>
+      <div class="ph-section__subtitle">Раздел VIII · 1991 — наши дни</div>
+    </div>
+  </div>
+
+  <div class="ph-grid-2">
+    <div>
+      <div class="ph-text">
+        <p>Текст о постсоветской фотографии: репортаж 90-х, свободный рынок, западное влияние, независимые агентства.</p>
+      </div>
+      <div class="ph-quote-wit">
+        <div class="ph-quote-wit__tag">Свидетельство очевидца</div>
+        <p>«Цитата фотографа или журналиста 90-х годов.»</p>
+        <cite>— Автор, год</cite>
+      </div>
+    </div>
+    <div>
+      <div class="ph-video"><div class="ph-video__play"></div><div class="ph-video__label">Хроника 1991</div></div>
+      <div class="ph-caption">Вставьте видео через Tilda Video. Подпись.</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="ph-ornament">— ◆ —</div>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 9: 2000-е — Цифра
+══════════════════════════════════════ -->
+<section id="s2000" class="ph-section">
+  <div class="ph-section__head">
+    <div class="ph-section__year">2000-е</div>
+    <div>
+      <div class="ph-section__title">Цифровая революция</div>
+      <div class="ph-section__subtitle">Раздел IX · Цифровая эпоха</div>
+    </div>
+  </div>
+
+  <div class="ph-text" style="max-width:760px; margin-bottom:48px;">
+    <p>Текст о переходе на цифру, мобильной фотографии, соцсетях и новых формах фотожурналистики в России.</p>
+  </div>
+
+  <div class="ph-stats">
+    <div class="ph-stats__cell"><span class="ph-stats__num">00М</span><div class="ph-stats__label">Фото в сутки (данные)</div></div>
+    <div class="ph-stats__cell"><span class="ph-stats__num">00</span><div class="ph-stats__label">Фотоагентств в России</div></div>
+    <div class="ph-stats__cell"><span class="ph-stats__num">00</span><div class="ph-stats__label">Другой показатель</div></div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     СПИСОК ЛИТЕРАТУРЫ
+     ЗАМЕНИ: добавляй/убирай <li> в каждом разделе.
+     В таймлайн не включён.
+══════════════════════════════════════ -->
+<section class="ph-section" style="max-width:960px;">
+  <div class="ph-section__head">
+    <div class="ph-section__year" style="font-size:28px; letter-spacing:2px;">Лит.</div>
+    <div>
+      <div class="ph-section__title">Список литературы и источников</div>
+      <div class="ph-section__subtitle">Научные работы · Источники · Интернет-ресурсы</div>
+    </div>
+  </div>
+
+  <!-- I. Научная литература -->
+  <div class="ph-bib">
+    <div class="ph-bib__heading">I. Научная и учебная литература</div>
+    <ol>
+      <li>
+        <span class="ph-bib__author">Морозов С. А.</span>
+        <span class="ph-bib__title"> Русская художественная фотография. Очерки из истории фотографии. 1839–1917.</span>
+        <span class="ph-bib__meta"> — М.: Искусство, 1961. — 142 с.</span>
+      </li>
+      <li>
+        <span class="ph-bib__author">Левашов В.</span>
+        <span class="ph-bib__title"> Лекции по истории фотографии.</span>
+        <span class="ph-bib__meta"> — М.: Treemedia, 2014. — 464 с.</span>
+      </li>
+      <li>
+        <span class="ph-bib__author">ЗАМЕНИ: Фамилия И. О.</span>
+        <span class="ph-bib__title"> Название работы.</span>
+        <span class="ph-bib__meta"> — Город: Издательство, год. — 000 с.</span>
+      </li>
+      <li>
+        <span class="ph-bib__author">ЗАМЕНИ: Фамилия И. О.</span>
+        <span class="ph-bib__title"> Название работы.</span>
+        <span class="ph-bib__meta"> — Город: Издательство, год. — 000 с.</span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- II. Источники -->
+  <div class="ph-bib">
+    <div class="ph-bib__heading">II. Источники (документы, мемуары, периодика)</div>
+    <ol>
+      <li>
+        <span class="ph-bib__title">Журнал «Фотограф».</span>
+        <span class="ph-bib__meta"> — СПб., 1880–1884. [Периодическое издание]</span>
+      </li>
+      <li>
+        <span class="ph-bib__title">Журнал «Советское фото».</span>
+        <span class="ph-bib__meta"> — М., 1926–1991. [Периодическое издание]</span>
+      </li>
+      <li>
+        <span class="ph-bib__author">ЗАМЕНИ: Автор (если есть).</span>
+        <span class="ph-bib__title"> Название документа / дневника / письма.</span>
+        <span class="ph-bib__meta"> — Архив, фонд, опись, дело.</span>
+      </li>
+      <li>
+        <span class="ph-bib__author">ЗАМЕНИ: Автор.</span>
+        <span class="ph-bib__title"> Название источника.</span>
+        <span class="ph-bib__meta"> — Место хранения, год.</span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- III. Интернет-ресурсы -->
+  <div class="ph-bib">
+    <div class="ph-bib__heading">III. Интернет-ресурсы</div>
+    <ul style="list-style:none; padding-left:0;">
+      <li style="padding-left:0;">
+        <span class="ph-bib__meta">Российский государственный архив кинофотофонодокументов (РГАКФФД) —</span>
+        <a href="https://rgakfd.gosarchives.ru" target="_blank">rgakfd.gosarchives.ru</a>
+        <span class="ph-bib__meta"> (дата обращения: ЗАМЕНИ)</span>
+      </li>
+      <li style="padding-left:0;">
+        <span class="ph-bib__meta">Мультимедиа Арт Музей, Москва —</span>
+        <a href="https://mamm-mdf.ru" target="_blank">mamm-mdf.ru</a>
+        <span class="ph-bib__meta"> (дата обращения: ЗАМЕНИ)</span>
+      </li>
+      <li style="padding-left:0;">
+        <span class="ph-bib__meta">ЗАМЕНИ: Название ресурса —</span>
+        <a href="#" target="_blank">URL</a>
+        <span class="ph-bib__meta"> (дата обращения: ЗАМЕНИ)</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- IV. Фильмография -->
+  <div class="ph-bib">
+    <div class="ph-bib__heading">IV. Фильмография и видеоисточники</div>
+    <ol>
+      <li>
+        <span class="ph-bib__title">ЗАМЕНИ: Название фильма / хроники.</span>
+        <span class="ph-bib__meta"> Реж. Фамилия И. О. — Страна: Студия, год. — 000 мин.</span>
+      </li>
+      <li>
+        <span class="ph-bib__title">ЗАМЕНИ: Название фильма / хроники.</span>
+        <span class="ph-bib__meta"> Реж. Фамилия И. О. — Страна: Студия, год. — 000 мин.</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<script src="js/timeline.js"></script>
+</body>
+</html>
