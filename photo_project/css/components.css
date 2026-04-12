@@ -216,6 +216,53 @@
 }
 
 
+/* ─── ВНЕШНИЕ ССЫЛКИ / ДОП ИСТОЧНИКИ ─── */
+.ph-source-link {
+  display: block;
+  background: #fdfaf4;
+  border: 1px solid var(--sepia-border);
+  border-left: 4px solid #1CAAD9;
+  padding: 24px 28px;
+  margin: 28px 0;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.ph-source-link:hover {
+  background: #f0f7fa;
+  border-color: #1CAAD9;
+  transform: translateX(4px);
+}
+.ph-source-link__tag {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #1CAAD9;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ph-source-link__tag::before {
+  content: '→';
+  font-size: 14px;
+}
+.ph-source-link p {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--sepia-dark);
+  margin: 0 0 6px 0;
+}
+.ph-source-link cite {
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+  color: var(--sepia-mid);
+  font-style: normal;
+}
+
+
 /* ─── ФОТО ПЛЕЙСХОЛДЕР ─── */
 .ph-photo {
   background: #d4c4aa;
@@ -443,3 +490,51 @@
 
 .ph-bib a { color: var(--sepia-mid); text-decoration: underline; text-underline-offset: 3px; }
 .ph-bib a:hover { color: var(--accent); }
+
+/* ─── FOOTER ─── */
+.ph-footer {
+  background: var(--bar-bg);
+  border-top: 1px solid var(--sepia-border);
+  padding: 48px 64px;
+  margin-top: 64px;
+}
+.ph-footer__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ph-footer__kicker {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--sepia-light);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ph-footer__date {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: var(--sepia-pale);
+  font-style: italic;
+}
+.ph-footer__names {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.ph-footer__names li {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: var(--sepia-mid);
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  .ph-footer { padding: 40px 24px; }
+  .ph-footer__inner { flex-direction: column; }
+  .ph-footer__names { text-align: left; }
+}
